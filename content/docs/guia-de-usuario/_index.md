@@ -1,0 +1,20 @@
+---
+title: "Guía de Usuario"
+date: 2022-03-18T10:47:44-05:00
+weight: 2
+geekdocCollapseSection: false
+---
+Explore the following sections to learn how to use Hextra:
+
+<!--more-->
+
+{{< cards >}}
+  {{< card link="organize-files" title="Organize Files" icon="document-duplicate" >}}
+  {{< card link="configuration" title="Configuration" icon="adjustments" >}}
+  {{< card link="markdown" title="Markdown" icon="markdown" >}}
+  {{< card link="syntax-highlighting" title="Syntax Highlighting" icon="sparkles" >}}
+  {{< card link="latex" title="LaTeX" icon="variable" >}}
+  {{< card link="diagrams" title="Diagrams" icon="chart-square-bar" >}}
+  {{< card link="shortcodes" title="Shortcodes" icon="template" >}}
+  {{< card link="deploy-site" title="Deploy Site" icon="server" >}}
+{{< /cards >}}

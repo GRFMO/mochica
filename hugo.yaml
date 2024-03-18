@@ -1,0 +1,82 @@
+# Hugo configuration file
+title: Mochica
+baseURL: https://grfmo.github.io/mochica/
+enableInlineShortcodes: true
+# import hextra as module
+theme: hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: es
+
+menu:
+  main:
+    - identifier: documentation
+      name: Docs
+      pageRef: /docs
+      weight: 1
+    - identifier: anuncios
+      name: Anuncios
+      pageRef: /anuncios
+      weight: 2
+    - identifier: about
+      name: About
+      pageRef: /about
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/imfing/hextra"
+      params:
+        icon: github
+  
+  sidebar:
+    - identifier: more
+      name: Más
+      params:
+        type: separator
+      weight: 1
+    - identifier: about
+      name: "About"
+      pageRef: "/about"
+      weight: 2
+    - identifier: slurm
+      name: "Slurm ↗"
+      url: "https://slurm.schedmd.com/"
+      weight: 3
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
+  editURL:
+    enable: true
+    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+  
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  anuncios:
+    list:
+      displayTags: true
